@@ -7,10 +7,6 @@ class SaleOrder(models.Model):
 
     @api.model
     def _generate_client_order_ref(self):
-        return self.env['ir.sequence'].next_by_code('sale.order.client.order.ref') or '/'
-
-    @api.model
-    def _generate_client_order_ref(self):
         # Controlla se è un abbonamento usando il campo is_subscription
         if hasattr(self, 'is_subscription') and self.is_subscription:
             return self.env['ir.sequence'].next_by_code('sale.order.client.order.ref') or '/'

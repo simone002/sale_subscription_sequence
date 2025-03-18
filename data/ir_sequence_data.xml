@@ -1,0 +1,11 @@
+<odoo>
+    <data noupdate="1">
+        <record id="sequence_subscription_order" model="ir.sequence">
+            <field name="name">Subscription Order Reference</field>
+            <field name="code">sale.order.subscription.ref</field>
+            <field name="prefix">SUB-</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

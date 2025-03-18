@@ -18,7 +18,7 @@
     'depends': ['sale'],
     
     # always loaded
-    'data': ['data/sequence.xml'],
+    'data': ['data/ir_sequence_data.xml'],
 
     'application': False,
     'installable': True,
